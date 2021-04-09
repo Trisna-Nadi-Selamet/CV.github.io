@@ -69,20 +69,20 @@ body{
 	background: #4c4d4f;
 }
 
-.left .icon{
+.left .icon {
 	font-size: 20px;
 	/*  warna Icon Skill dan contact */
 	color: #4c4d4f;
 }
 
-.left .text{
+.left .text {
 	/*  warna tex Skill dan contact */
 	color: #4c4d4f;
 	/* text-transform: uppercase; */
 	font-size: 12px;
 }
 
-.contact .li_wrap{
+.contact .li_wrap {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -106,11 +106,23 @@ body{
 }
 
 .skills ul,
-.hobbies ul{
+.hobbies ul,
+.certificate ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+.certificate .li_cer {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	margin-left: 50;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 
 .skills .li_wrap,
 .hobbies .li_wrap{
@@ -124,6 +136,11 @@ body{
 	justify-content: center;
 }
 
+.certificate .li_cer{
+	/* warna kotak background sertifikat */
+	background: #fff;
+	
+}
 .skills .li_wrap{
 	/* warna kotak background skill */
 	background: #fff;
@@ -133,6 +150,31 @@ body{
 .hobbies .li_wrap .text{
 	margin-top: 5px;
 }
+
+
+.certificate .li_cer{
+	/* warna garis kotak Hobbies */
+	border: 2px solid #4c4d4f;
+}
+
+.certificate .li_cer .icon,
+.certificate .li_cer .text{
+	/* warna text Hobbies */
+	color: #4c4d4f;
+}
+
+.certificate .li_cer:hover{
+	/* warna ke 2 kotak Hobbies */
+	
+	background:#4c4d4f;
+}
+
+.certificate .li_cer:hover .icon,
+.certificate .li_cer:hover .text{
+	color: #4c4d4f;
+}
+
+
 
 .hobbies .li_wrap{
 	/* warna garis kotak Hobbies */
@@ -229,7 +271,11 @@ body{
 	/* warna font title perkerjaan */
 	color: #4c4d4f;
 }
-
+.info_cer{
+	font-weight: 1000;
+	font-size: 12px;
+	
+}
 .right_inner .li_wrap .info_com{
 	font-weight: 300;
 	font-size: 14px;
