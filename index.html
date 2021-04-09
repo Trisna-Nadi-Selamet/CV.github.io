@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resume CV </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="stylesheet.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
@@ -270,13 +272,31 @@
 								<li>
 									<div class="li_wrap">
 										<div class="date">
-											2019 - 2020
+											2019 - 2021
 										</div>	
 								        <div class ="boxcer">
-										<img class="li_cer" src="Sertifikat1.jpg" alt="picture" height="90" width="90">
-										<img class="li_cer" src="Sertifikat2.jpg" alt="picture" height="90" width="90">
-										<img class="li_cer" src="Sertifikat3.jpg" alt="picture" height="90" width="90">
-								</div>    	
+											<div class="w3-row-padding">
+												<div class="li_cer">
+												  <img class ="li_cer" src="Sertifikat1.jpg" style="width:100%;cursor:pointer" 
+												  onclick="onClick(this)" class="w3-hover-opacity">
+												</div>
+												<div class="li_cer">
+												  <img class ="li_cer" src="Sertifikat2.jpg" style="width:100%;cursor:pointer" 
+												  onclick="onClick(this)" class="w3-hover-opacity">
+												</div>
+												<div class="li_cer">
+												  <img class ="li_cer" src="Sertifikat3.jpg" style="width:100%;cursor:pointer" 
+												  onclick="onClick(this)" class="w3-hover-opacity">
+												</div>
+											  </div>
+											  
+											  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+												<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+												<div class="w3-modal-content w3-animate-zoom">
+												  <img id="img01" style="width:100%">
+												</div>
+									   </div>
+								   	
 								</li>
 							</ul>
 						</div> 
@@ -337,6 +357,17 @@
 			</div>
 		</div>
 	</div>
-
+	<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+	<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+	<div class="w3-modal-content w3-animate-zoom">
+		  <img id="img01" style="width:100%">
+		</div>
+	  </div>
+	<script>
+		function onClick(element) {
+		  document.getElementById("img01").src = element.src;
+		  document.getElementById("modal01").style.display = "block";
+		}
+		</script>
 </body>
 </html>

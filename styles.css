@@ -116,11 +116,12 @@ body{
 	width: 100px;
 	height: 100px;
 	margin-bottom: 15px;
-	border-radius: 15px;
-	margin-left: 50;
+	border-radius: 10px;
+	margin-left: 0.5px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	display: inline-block;
 }
 
 
