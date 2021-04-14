@@ -22,6 +22,7 @@ body{
 .left{
 	background: #ebecee;
 	width: 250px;
+	
 	padding: 0 20px;
 	
 }
@@ -34,15 +35,16 @@ body{
 
 .Photo .img_holder{
 	text-align: center;
-	padding: 10px 0;
+	padding: 20px 0;
 	
 }
 
 .Photo .img_holder img{
-	width: 12vh;
-	max-height: 150vh;
-	border-radius: 10%;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+	width: 200px;
+	height: 200px;
+	/* max-height: 150vh; */
+	border-radius: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0.25); */
 }
 
 
@@ -215,8 +217,7 @@ body{
 .Photo{
 	/* background warna di box photo */
 	background: #4c4d4f;
-	width: 250px;
-	height: 240px;
+	
 }
 .header .name{
 	font-size: 30px;
