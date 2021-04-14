@@ -34,13 +34,17 @@ body{
 
 .Photo .img_holder{
 	text-align: center;
-	padding: 19px 0;
+	padding: 10px 0;
+	
 }
 
 .Photo .img_holder img{
-	width: 200px;
-	border-radius: 30px;
+	width: 12vh;
+	max-height: 150vh;
+	border-radius: 10%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
+
 
 .pb{
 	padding-bottom: 12px;
@@ -211,7 +215,7 @@ body{
 .Photo{
 	/* background warna di box photo */
 	background: #4c4d4f;
-	width: 270px;
+	width: 250px;
 	height: 240px;
 }
 .header .name{
