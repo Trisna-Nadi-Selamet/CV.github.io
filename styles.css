@@ -217,6 +217,8 @@ body{
 .Photo{
 	/* background warna di box photo */
 	background: #4c4d4f;
+	width: 250px;
+	height: 240px;
 	
 }
 .header .name{
